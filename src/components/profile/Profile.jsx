@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 import CV from '../../assets/Hamza_Abo-Farah_CV.pdf';
+import { Link } from "react-scroll";
 
 const Profile = () => {
   return (
@@ -51,12 +52,15 @@ const Profile = () => {
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">
-            <a
+             <Link
+              href={`#portfolio`}
+              to={`portfolio`}
+              smooth={true}
+              duration={750}
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              href="#portfolio"
-            >
-              My Projects
-            </a>
+             >
+             My Projects
+            </Link>
             <a
               className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
               href={CV} download

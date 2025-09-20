@@ -1,9 +1,11 @@
 import logo from "../../../assets/logo.png";
+import { Link } from "react-scroll";
+
 
 /* Footer nabLinks */
 const navItems = [
-  { id: 1, name: "Home", url: "Home" },
-  { id: 2, name: "About", url: "About" },
+  { id: 1, name: "Home", url: "introduction" },
+  { id: 2, name: "About", url: "Profile" },
   { id: 4, name: "Portfolio", url: "Portfolio" },
   { id: 7, name: "Contact", url: "Contact" },
 ];
@@ -21,14 +23,16 @@ const Footer = () => {
         </a>
         <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
-            <a
-              key={item.id}
-              className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
+            <Link
               href={`#${item.url.toLowerCase()}`}
-            >
-              {item.name}
-              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
-            </a>
+              to={item.url.toLowerCase()}
+              smooth={true}
+              duration={750}
+              className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
+             >
+             {item.name}
+             <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
+            </Link>
           ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">
