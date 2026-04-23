@@ -16,15 +16,18 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I am Hamza Abo-Farah, a <span className="bg-highlight">Computer
-            Engineer and Full-Stack Developer</span> passionate about building
-            efficient, scalable, and user-friendly web applications. With
-            experience in frontend development (HTML, CSS, JS, Bootstrap) and
-            backend development (Node.js, Express.js, MongoDB, MySQL).
+            I am Hamza Abo-Farah, a{" "}
+            <span className="bg-highlight">
+              Computer Engineer and Full-Stack Developer
+            </span>{" "}
+            passionate about building Backend-focused Computer Systems
+            Engineering graduate specializing in ASP.NET Core and Node.js.
+            Experienced in building scalable RESTful APIs, implementing secure
+            authentication, and designing clean architectures. Strong foundation
+            in data structures, algorithms, and OOP.
           </p>
         </div>
-        <div className="mx-auto lg:mx-0 relative">
-        </div>
+        <div className="mx-auto lg:mx-0 relative"></div>
       </div>
       <div
         className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}

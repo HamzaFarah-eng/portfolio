@@ -1,5 +1,6 @@
 import Projects from "./Projects";
 import myTasks from "../../assets/images/portfolio-images/my-tasks.jpg";
+import apiImg from "/ecommerce-api.png";
 import memoryGame from "../../assets/images/portfolio-images/memory-game.jpg";
 import guesstheWord from "../../assets/images/portfolio-images/guess-the-word.jpg";
 import bimiCake from "../../assets/images/portfolio-images/bimi-cake.jpg";
@@ -40,6 +41,15 @@ const projectData = [
     description:
       "Designed and implemented a task management app with CRUD functionality, responsive layout, and an intuitive interface for organising daily activities.",
     link: "https://hamzafarah-eng.github.io/TaskManeger/",
+  },
+  {
+    id: 5,
+    image: apiImg,
+    category: "Backend Project",
+    title: ".Net E-commerce API",
+    description:
+      "A scalable RESTful API using clean 3-tier architecture, Implemented JWT authentication with ASP.NET Identity Developed core modules: products, categories, cart, orders, and inventory Designed order lifecycle and ensured transactional consistency.",
+    link: "https://documenter.getpostman.com/view/39694644/2sBXirjoqU",
   },
 ];
 
