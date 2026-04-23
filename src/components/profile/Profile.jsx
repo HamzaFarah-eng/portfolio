@@ -42,8 +42,7 @@ const Profile = () => {
           >
             <p className={``}>
               I enjoy designing and developing services that combine performance
-              with modern, responsive design. I have also explored AI & Machine
-              Learning and participated in competitive programming,
+              with modern, responsive design. Participated in competitive programming,
               strengthening my problem-solving and algorithmic skills.
             </p>
             <p className="mt-3">
